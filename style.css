@@ -3,6 +3,13 @@
     display: flex;
     font-size: 24px;
     justify-content: space-around;
+    align-items: flex-end;
+    height: 40px;
+}
+
+.header > ul {
+    display: flex;
+    gap: 50px;
 }
 
 ul {
@@ -24,6 +31,9 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    width: 1440;
+    height: 1912;
+    font-family: roboto;
 }
 
 .intro {
@@ -31,6 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 475px;
 }
 
 .hi {
@@ -42,11 +53,14 @@ body {
 img {
     flex-shrink: 0;
     width: 450px;
-    height: 274px;
+    align-items: center;
 }
 .about {
     width: 450px;
-    height: 274px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
 }
 
 .description {
@@ -57,12 +71,22 @@ img {
 .footer {
     background-color: #1F2937;
     color: #E5E7EB;
+    height: 100px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
 }
 
-.contact {
+.blue {
     background-color: #3882F6;
     width: 950px;
-
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
 }
 
 .skills {
@@ -70,6 +94,16 @@ img {
     font-size: 25px;
     font-style: light italic;
     color: #1F2937;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills > ul {
+    display: flex;
+    flex-direction: column;
 }
 
 .h1 {
@@ -87,4 +121,19 @@ img {
 .text1 {
     color: #E5E7EB;
     font-size: 18px;
+}
+
+.contact {
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects {
+    height: 500px;
+}
+
+button {
+    align-self: flex-start;
 }
